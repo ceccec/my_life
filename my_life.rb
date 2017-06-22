@@ -26,7 +26,7 @@ module My
       case feeling
       when *is[:usually] then "Life is Good! ;)"
       when *is[:sometimes] then
-        "There are paths for #{is[:usually][0..-2].join(' ')} and #{is[:usually].last}! :)"
+        "There are paths for #{is[:usually][0..-2].join(', ')} and #{is[:usually].last}! :)"
       else
         "#{is[:usually].first} Is All I Need! ;)"
       end
